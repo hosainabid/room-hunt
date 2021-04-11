@@ -1,0 +1,111 @@
+@import "~bootstrap/scss/bootstrap";
+$theme-color: #275a53; 
+
+.theme-text , b{
+    color: $theme-color;
+}
+body{
+    background: whitesmoke;
+}
+h2{
+    font-weight: 700;
+}
+.price {
+    color: $theme-color;
+    font-weight:700;
+    font-size: 25px;
+}
+.btn{
+    background: $theme-color;
+    border: none;
+    outline: none;
+}
+.banner {
+    background: url(./images/banner.png);
+    min-height:70vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    input{
+     max-width: 400px;
+    }
+    h1{
+        color: white;
+    }
+}
+.layer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    div{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }    
+}
+.navi {
+    img{
+        height:50px;
+    }
+}
+.navbar-light .navbar-nav .nav-link {
+        color: black ;
+        letter-spacing: 2px;
+        font-weight: 500;
+        transition: all .3s ease-in-out;
+    }
+.navbar-light .navbar-nav .nav-link:hover {
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: $theme-color;
+}
+#or {
+    text-align: center;
+    position: relative;
+}
+#or::before{
+    content: '';
+    position: absolute;
+    width: 45%;
+    height: 2px;
+    bottom: 40%;
+    left: 0%;
+    background: gray;
+}
+#or::after{
+    content: '';
+    position: absolute;
+    width: 45%;
+    height: 2px;
+    bottom: 40%;
+    right: 0%;
+    background: gray;
+}
+.form{
+    width: 90%;
+    margin: auto;
+}
+footer {
+    color: #fff;
+    background: $theme-color;
+    ul {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style-type: none;
+        }
+}
+@media only screen and (min-width: 600px) {
+    .form{
+        width: 40%;
+        margin: auto;
+    }
+  }
