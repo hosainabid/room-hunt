@@ -1,8 +1,8 @@
 export const firebaseConfig = {
-  apiKey: "AIzaSyDOufjt9GWBuUhOWXi6tNvIsFYVYMdBy_I",
-  authDomain: "hotel-book-8d5f3.firebaseapp.com",
-  projectId: "hotel-book-8d5f3",
-  storageBucket: "hotel-book-8d5f3.appspot.com",
-  messagingSenderId: "576885219365",
-  appId: "1:576885219365:web:94d2bf09130095e8321fcc"
+  apiKey: "AIzaSyDQ98wr7GBhbrbWZta-I2tL2nRJLWhmnrw",
+    authDomain: "room-hunt-f268f.firebaseapp.com",
+    projectId: "room-hunt-f268f",
+    storageBucket: "room-hunt-f268f.appspot.com",
+    messagingSenderId: "57054570735",
+    appId: "1:57054570735:web:70a004bfcb7416439a131a"
 };

@@ -9,7 +9,7 @@ const UpdateInfo = () => {
         const price = document.getElementById('price').value;
         const product = { RoomID, price };
 
-        fetch(`https://still-waters-21873.herokuapp.com/update/${RoomID}`, {
+        fetch(`https://dry-stream-50320.herokuapp.com/update/${RoomID}`, {
             method: 'PATCH',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(product)

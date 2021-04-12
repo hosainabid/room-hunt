@@ -8,7 +8,7 @@ const Sidebar = () => {
     const [admin, setAdmin] = useState(false);
 
     useEffect(() => {
-        const url = 'https://still-waters-21873.herokuapp.com/isAdmin'
+        const url = 'https://dry-stream-50320.herokuapp.com/isAdmin'
         fetch(url, {
             method: 'POST',
             headers: { 'content-type': 'application/json' },

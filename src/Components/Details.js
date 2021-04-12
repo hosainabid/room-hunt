@@ -13,7 +13,7 @@ const Details = () => {
     const [hotelData, setHotelData] = useState([]);
     const { id } = useParams();
     useEffect(() => {
-        const url = 'https://still-waters-21873.herokuapp.com/HotelData'
+        const url = 'https://dry-stream-50320.herokuapp.com/HotelData'
         fetch(url).then(res => res.json()).then(data => setHotelData(data))
     }, []);
     const CurrentApartment = hotelData.find(x => x.id === id);
@@ -48,7 +48,7 @@ const Details = () => {
             const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
             setDayCount(diffDays + 1);
 
-            fetch('https://still-waters-21873.herokuapp.com/newBooking', {
+            fetch('https://dry-stream-50320.herokuapp.com/newBooking', {
                 method: 'POST',
                 body: formData
             })

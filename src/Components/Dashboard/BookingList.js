@@ -4,7 +4,7 @@ import Sidebar from './Sidebar';
 const BookingList = () => {
     const [bookings, setBookings] = useState([]);
     useEffect(() => {
-        const url = 'https://still-waters-21873.herokuapp.com/bookings'
+        const url = 'https://dry-stream-50320.herokuapp.com/bookings'
         fetch(url).then(res => res.json()).then(data => setBookings(data))
     }, []);
 

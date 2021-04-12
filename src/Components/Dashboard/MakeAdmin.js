@@ -8,7 +8,7 @@ const MakeAdmin = () => {
     const handleSubmit = (e) => {
         const formData = new FormData()
         formData.append('email', adminEmail);
-        fetch('https://still-waters-21873.herokuapp.com/makeAdmin', {
+        fetch('https://dry-stream-50320.herokuapp.com/makeAdmin', {
             method: 'POST',
             body: formData
         })

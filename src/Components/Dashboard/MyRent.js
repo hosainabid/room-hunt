@@ -5,7 +5,7 @@ const MyRent = () => {
     // const [loggedInUser, setloggedInUser] = useContext(UserContext);
     const [bookings, setBookings] = useState([]);
     useEffect(() => {
-        const url = 'https://still-waters-21873.herokuapp.com/myBookings?email=' + sessionStorage.getItem('CurrentUser');
+        const url = 'https://dry-stream-50320.herokuapp.com/myBookings?email=' + sessionStorage.getItem('CurrentUser');
         fetch(url).then(res => res.json()).then(data => setBookings(data))
     }, []);
 

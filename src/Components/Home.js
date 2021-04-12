@@ -12,7 +12,7 @@ import MailchimpSubscribe from './MailchimpSubscribe';
 const Home = () => {
     const [Hotel, setHotel] = useState([])
     useEffect(() => {
-        const url = 'https://still-waters-21873.herokuapp.com/HotelData'
+        const url = 'https://dry-stream-50320.herokuapp.com/HotelData'
         fetch(url).then(res => res.json()).then(data => { setFilteredData(data); setHotel(data) })
     }, []);
     const [filteredData, setFilteredData] = useState([]);
@@ -51,7 +51,7 @@ const Home = () => {
         }
     }
     const handleDelete = (event, id) => {
-        fetch(`https://still-waters-21873.herokuapp.com/delete/${id}`, {
+        fetch(`https://dry-stream-50320.herokuapp.com/delete/${id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())

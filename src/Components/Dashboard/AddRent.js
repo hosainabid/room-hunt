@@ -35,7 +35,7 @@ const AddRent = () => {
         formData.append('SwimmingPool', roomInfo.SwimmingPool);
         formData.append('Parking', roomInfo.Parking);
         console.log(formData);
-        fetch('https://still-waters-21873.herokuapp.com/addRoom', {
+        fetch('https://dry-stream-50320.herokuapp.com/addRoom', {
             method: 'POST',
             body: formData
         })
